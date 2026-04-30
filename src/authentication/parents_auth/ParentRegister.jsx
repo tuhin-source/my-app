@@ -1,13 +1,14 @@
 import React from 'react'
 import "./parent.css"
+import {Link} from "react-router-dom"
 
 const ParentRegister = () => {
   return (
     <div className="form-card-wrapper">
         <div className="form-card">
-
           <div className="left">
               <img src="/parent_page.png" alt="Welcome" />
+              
           </div>
 
           <div className="right">
@@ -26,7 +27,7 @@ const ParentRegister = () => {
                   <input type="password" placeholder='Enter Name' required/>
 
                   <button type='submit'>Get Started </button>
-                  
+                  <p>Already have an account?<Link>Sign in</Link></p>
               </form>
           </div>
 

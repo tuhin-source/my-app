@@ -20,7 +20,7 @@ body{
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   border-radius: 10px;
   overflow: hidden;
-  border: 5px solid greenyellow;
+  border: none;
   transition: all 0.3s ease;
   gap: 2px;
 }
@@ -38,7 +38,6 @@ body{
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-position: 20% center;
 }
 
 .form-card-wrapper .form-card .left img{
@@ -48,36 +47,12 @@ body{
   background-repeat: no-repeat;
 }
 
-.form-card .left .features {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 30px;
-  position: absolute;
-  bottom: 20px;
-}
-
-.form-card .left .feature-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background: rgba(255,255,255,0.15);
-  backdrop-filter: blur(10px);
-  border-radius: 10px;
-  padding: 10px;
-  color: white;
-}
-
 .form-card .left {
   position: relative; /* needed for absolute children */
 }
 
 .form-card-wrapper .form-card .right{
   background-color: #f0eeff;
-}
-
-.form-card-wrapper .form-card .right:hover{
-  text-decoration: dashed;
 }
 
 .form-card-wrapper .form-card .right form{
@@ -115,6 +90,7 @@ body{
   border: 2px solid blue;
   outline: none;
   box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+  transform: translateY(-3px);
 } 
 .form-card-wrapper .form-card .right form input::placeholder{
   font-size: 13px;
@@ -131,11 +107,25 @@ body{
   cursor: pointer;
   margin: 20px 0 0;
   transition: all 0.3s ease;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 .form-card-wrapper .form-card .right form button:hover{
   transform: translateY(-3px);
   opacity: 0.9;
+}
+
+.form-card-wrapper .form-card .right form p{
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.form-card-wrapper .form-card .right form p Link{
+  color: #720bd8;
+  cursor: pointer;
 }
 
 @media (max-width:768px) {
