@@ -1,6 +1,5 @@
 import React from 'react'
-import Register from './authentication/Register'
-import Login from './authentication/Login'
+import ParentRegister from './authentication/parents_auth/ParentRegister'
 import { BrowserRouter,Routes, Route } from 'react-router-dom'
 
 
@@ -8,8 +7,7 @@ const App = () => {
   return (
     <BrowserRouter>
     <Routes>
-           <Route path='/register' element={<Register/>}></Route>
-           <Route path='/login' element={<Login/>}></Route>
+           <Route path='/' element={<ParentRegister/>}></Route>
     </Routes>
     </BrowserRouter>
   )
