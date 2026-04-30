@@ -134,3 +134,9 @@ body{
   transform: translateY(-3px);
   opacity: 0.9;
 }
+
+@media (max-width:768px) {
+  .form-card-wrapper .form-card{
+    grid-template-columns: 1fr;
+  }
+}
