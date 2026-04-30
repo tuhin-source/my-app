@@ -115,7 +115,7 @@ body{
   border: 2px solid blue;
   outline: none;
   box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
-}
+} 
 .form-card-wrapper .form-card .right form input::placeholder{
   font-size: 13px;
 }
