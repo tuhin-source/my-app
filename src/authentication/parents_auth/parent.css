@@ -116,6 +116,9 @@ body{
   outline: none;
   box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
 }
+.form-card-wrapper .form-card .right form input::placeholder{
+  font-size: 13px;
+}
 
 .form-card-wrapper .form-card .right form button{
   display: block;
@@ -138,5 +141,7 @@ body{
 @media (max-width:768px) {
   .form-card-wrapper .form-card{
     grid-template-columns: 1fr;
+    width: 90%;              /* shrink width for mobile */
+    margin: 0 auto;          /* ensure horizontal centering */
   }
 }

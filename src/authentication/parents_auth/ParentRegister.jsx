@@ -25,7 +25,7 @@ const ParentRegister = () => {
                   <label htmlFor="">Password</label>
                   <input type="password" placeholder='Enter Name' required/>
 
-                  <button type='submit'>Submit</button>
+                  <button type='submit'>Get Started </button>
                   
               </form>
           </div>
